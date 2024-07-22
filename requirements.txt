@@ -1,0 +1,8 @@
+transformers
+pandas
+openai
+retry
+datasets 
+accelerate 
+bitsandbytes 
+peft 

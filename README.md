@@ -42,11 +42,5 @@ This project involves the development and fine-tuning of large language models (
 - Datasets (FinanceBench, RAG-Instruct-Benchmark-Tester)
 
 ### Installation
-Clone the repository:
-```sh
-git clone https://github.com/yourusername/financial-qa-finetuning.git
-cd financial-qa-finetuning
-
-
 Install the required packages:
 pip install -r requirements.txt

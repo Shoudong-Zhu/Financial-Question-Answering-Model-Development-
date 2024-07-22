@@ -19,7 +19,7 @@ class Model:
 @dataclass
 class OpenAIChatModel(Model):
     def __init__(self, model, model_kwargs=None):
-        self.client = OpenAI(api_key="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")
+        self.client = OpenAI(api_key="your openai api key")
         self.model = model
 
         self.model_kwargs = model_kwargs

@@ -30,7 +30,7 @@ from datasets import load_dataset
 dataset = load_dataset("PatronusAI/financebench")
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "your-openai-api-key"
 
 # Prepare the dataset in the required format
 train_data = []
@@ -63,7 +63,7 @@ os.environ['OPENAI_API_KEY'] = 'Your OpenAI key'
 # !openai api fine_tunes.create -t fine_tune_train_prepared.jsonl -m gpt-3.5-turbo
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="your openai api key")
 
 client.fine_tuning.jobs.create(
   training_file="file-j6BYhWiZSoFxtBxyeqGVFSlw",

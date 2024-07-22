@@ -66,7 +66,7 @@ from openai import OpenAI
 # client = OpenAI(api_key="your openai api key")
 
 client.fine_tuning.jobs.create(
-  training_file="file-j6BYhWiZSoFxtBxyeqGVFSlw",
+  training_file="your file id",
   model="gpt-3.5-turbo",
   hyperparameters={
         "batch_size": 8,
@@ -79,7 +79,7 @@ client.fine_tuning.jobs.create(
 You can monitor the status of your fine-tuning job using the OpenAI API. Here’s how you can periodically check the status:
 """
 
-client.fine_tuning.jobs.retrieve("ftjob-OJYFhePUOUO2IMTLgwclEFcH")
+client.fine_tuning.jobs.retrieve("your job id")
 
 
 import time
@@ -135,7 +135,7 @@ with open('fine_tune_train.jsonl', 'w') as f:
 model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
 # model_name = "meta-llama/Llama-2-7b-chat-hf"
 # Set your Hugging Face token as an environment variable
-os.environ["HF_TOKEN"] = "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"
+os.environ["HF_TOKEN"] = "your huggingface token"
 # Set your Hugging Face token
 hf_token = "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"
 tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=hf_token)
